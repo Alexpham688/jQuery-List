@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <form class="form-group">
+      <input id="input"type="text">
+      <button type="button" ID="add-btn"class="btn btn-primary"name="button">ADD</button>
+    </form>
+    <div id="container"class="row pick-list">
+      <div id="col"class="col-sm-4">
+        <ol class='list-group source'>
+          <li class='list-group-item'>OPTION 1</li>
+          <li class='list-group-item'>OPTION 2</li>
+          <li class='list-group-item'>OPTION 3</li>
+          <li class='list-group-item'>OPTION 4</li>
+          <li class='list-group-item'>OPTION 5</li>
+        </ol>
+      </div>
+
+      <div class="col-sm-2 v-center">
+        <button title="send to list 2" class="btn btn-default center-block add" disabled='disabled'><i class="glyphicon glyphicon-chevron-right"></i></button>
+        <button title="send to list 1" class="btn btn-default center-block remove" disabled='disabled'><i class="glyphicon glyphicon-chevron-left"></i></button>
+      </div>
+      <div class="col-sm-4">
+        <ol class="list-group destination">
+
+        </ol>
+      </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
