@@ -3,27 +3,70 @@
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  margin-top: 50px;
+  margin-top: 70px;
+}
+@font-face {
+  font-family: "komika";
+  src:url('komika_axis/KOMIKAX_.ttf');
+}
+header {
+  background: #e7e7e7;
+  text-align: center;
+  padding: 10px 10px;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "komika";
+  src:url('komika_axis/KOMIKAX_.ttf');
+}
+
+#col {
+  margin-left: 60px;
 }
 #container{
   margin: 0 auto;
   height: 300px;
-  width: 800px;
-  padding: 20px 20px;
-  border: 2px solid orange;
-
+  width: auto;
+  padding: 10px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  margin-bottom: 60px;
+  font-family: "komika";
+  src:url('komika_axis/KOMIKAX_.ttf');
+}
+h3 {
+  margin-left: 50px;
 }
 .list-group {
   border: 2px inset #eee;
   height: 180px;
   overflow-y: auto;
+  margin: 0 auto;
 }
 .list-group-item {
   cursor: pointer;
 }
-#col {
-  margin-left: 50px;
+.source {
+  background:#fff;
+
 }
+.destination {
+  background: #fff;
+
+}
+.source li{
+  background: #CBC4C4;
+}
+li:hover {
+  background: #eee;
+  color: #005CB2;
+}
+.destination li:hover {
+  background: #eee;
+  color: #005CB2;
+}
+
 form {
   height: 100px;
   width: 600px;
@@ -31,13 +74,17 @@ form {
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px 20px;
-  font-size: 1.3em;
+  font-family: "komika";
+  src:url('komika_axis/KOMIKAX_.ttf');
+
 }
 #input {
   width: 40%;
   -webkit-transition: 0.4s ease-in-out;
   transition:0.4s ease-in-out;
   margin-left: 40px;
+  font-size: 1.3em;
+  padding: 3px 0 3px 8px;
 }
 
 #input:focus {
@@ -46,4 +93,12 @@ form {
   color: #fff;
   -webkit-transition: 0.4s ease-in-out;
   transition:0.4s ease-in-out;
+}
+#delete {
+  position: absolute;
+  margin-top: 200px;
+}
+.destination li {
+  background: #8D8CB2;
+  color: #fff;
 }

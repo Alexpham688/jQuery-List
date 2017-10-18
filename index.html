@@ -9,30 +9,41 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   </head>
   <body>
+    <header>
+      <h1>jQuery List</h1>
+    </header>
     <form class="form-group">
       <input id="input"type="text">
       <button type="button" ID="add-btn"class="btn btn-primary"name="button">ADD</button>
     </form>
     <div id="container"class="row pick-list">
+
       <div id="col"class="col-sm-4">
+        <h3>Need To Do</h3>
         <ol class='list-group source'>
-          <li class='list-group-item'>OPTION 1</li>
-          <li class='list-group-item'>OPTION 2</li>
-          <li class='list-group-item'>OPTION 3</li>
-          <li class='list-group-item'>OPTION 4</li>
-          <li class='list-group-item'>OPTION 5</li>
+          <li class='list-group-item'>Wash the car</li>
+          <li class='list-group-item'>Clean the basement</li>
+          <li class='list-group-item'>Mop the floors</li>
+          <li class='list-group-item'>Emoty the dishwasher</li>
+          <li class='list-group-item'>Take out the trash</li>
+          <li class='list-group-item'>Cut the grass</li>
         </ol>
       </div>
 
-      <div class="col-sm-2 v-center">
+      <div class="col-xs-2 v-center">
+        <button type="button" id="add-all"class="btn btn-success center-block add-all"name="button"><i class="glyphicon glyphicon-forward"></i></button>
         <button title="send to list 2" class="btn btn-default center-block add" disabled='disabled'><i class="glyphicon glyphicon-chevron-right"></i></button>
         <button title="send to list 1" class="btn btn-default center-block remove" disabled='disabled'><i class="glyphicon glyphicon-chevron-left"></i></button>
+        <button type="button" id="remove-all"class="btn btn-warning center-block remove-all"><i class='glyphicon glyphicon-backward'></i></button>
       </div>
       <div class="col-sm-4">
+        <h3>Job Done!!</h3>
         <ol class="list-group destination">
 
         </ol>
+
       </div>
+      <button id="delete"type="button" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
     </div>
 
 
