@@ -21,11 +21,11 @@ header {
 }
 
 #col {
-  margin-left: 60px;
+  margin-left: 80px;
 }
 #container{
   margin: 0 auto;
-  height: 300px;
+  height: auto;
   width: auto;
   padding: 10px 10px;
   border: 2px solid #ccc;
