@@ -9,6 +9,10 @@
   font-family: "komika";
   src:url('komika_axis/KOMIKAX_.ttf');
 }
+@font-face {
+  font-family:'komika_display';
+  src:url('komika_display/kmkdspt_.ttf')
+}
 header {
   background: #e7e7e7;
   text-align: center;
@@ -19,21 +23,25 @@ header {
   font-family: "komika";
   src:url('komika_axis/KOMIKAX_.ttf');
 }
-
+.instruct {
+  text-align: center;
+  font-family:'komika_display';
+  src:url('komika_display/kmkdspt_.ttf')
+}
 #col {
   margin-left: 80px;
 }
 #container{
-  margin: 0 auto;
+  margin: 20px auto;
   height: auto;
   width: auto;
   padding: 10px 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   background: #eee;
-  margin-bottom: 60px;
   font-family: "komika";
   src:url('komika_axis/KOMIKAX_.ttf');
+
 }
 h3 {
   margin-left: 50px;
@@ -49,11 +57,9 @@ h3 {
 }
 .source {
   background:#fff;
-
 }
 .destination {
   background: #fff;
-
 }
 .source li{
   background: #CBC4C4;
@@ -66,7 +72,6 @@ li:hover {
   background: #eee;
   color: #005CB2;
 }
-
 form {
   height: 100px;
   width: 600px;
@@ -76,7 +81,6 @@ form {
   padding: 20px 20px;
   font-family: "komika";
   src:url('komika_axis/KOMIKAX_.ttf');
-
 }
 #input {
   width: 40%;
@@ -86,7 +90,6 @@ form {
   font-size: 1.3em;
   padding: 3px 0 3px 8px;
 }
-
 #input:focus {
   width: 70%;
   background: #828282;
@@ -101,4 +104,19 @@ form {
 .destination li {
   background: #8D8CB2;
   color: #fff;
+}
+.strike {
+  text-decoration: line-through;
+}
+.box {
+  width: 600px;
+  height: 60px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  background: #54698B;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 5px 5px;
+  font-size: 1.3em;
 }

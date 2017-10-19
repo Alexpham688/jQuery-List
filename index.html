@@ -12,12 +12,17 @@
     <header>
       <h1>jQuery List</h1>
     </header>
+
     <form class="form-group">
       <input id="input"type="text">
       <button type="button" ID="add-btn"class="btn btn-primary"name="button">ADD</button>
     </form>
-    <div id="container"class="row pick-list">
 
+    <div class="box">
+      <p class='instruct'><em>click and drag your order, when finished move to done column, dbl click to delete individual item or trash button to delete all.</em></p>
+    </div>
+
+    <div id="container"class="row pick-list">
       <div id="col"class="col-sm-4">
         <h3>Need To Do</h3>
         <ol class='list-group source'>
